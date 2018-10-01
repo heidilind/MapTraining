@@ -41,26 +41,4 @@ describe('<App />', () => {
     expect(mainContainer.length).toEqual(0)
   })
 
-
-  it('renders saved paths', () => {
-    const wrapper = shallow((
-      <App>
-        <PathView />
-      </App>
-      
-    ))
-    const saveMapButton = wrapper.find(
-      '#savePath'
-    )
-    
-    //saveMapButton.at(0).simulate('click')
-    
-    console.log(wrapper.debug())
-    const foundPaths = wrapper.find(
-      '.singlePath'
-    )
-    
-    expect(foundPaths.length).toEqual(1)
-  })
-
 })

@@ -28,5 +28,5 @@ $ CI=true npm test
 ```
 ## Usage
 
-Use application with a browser at  http://localhost:3001
-Use browser or other client program to see JSON:s received by server at the address http://localhost:3001/paths
+Use application with a browser at  http://localhost:3001.
+Use browser or other client program to see JSON:s received by the server at the address http://localhost:3001/paths

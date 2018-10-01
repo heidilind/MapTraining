@@ -4,6 +4,7 @@ import Map from './components/Map.js'
 import HeatMap from './components/HeatMap.js'
 import PathView from './components/PathView'
 import axios from 'axios'
+import './App.css'
 
 class App extends React.Component {
   constructor(props) {
@@ -66,28 +67,32 @@ class App extends React.Component {
     if (this.state.heatMapSelected === false) {
       return (
         <div id='mainContainer'>
-          <Map
-            handleMapClick={this.handleMapClick}
-            markers={this.state.markers}/>
+          <div className='pathAndMap'>
+            <Map
+              handleMapClick={this.handleMapClick}
+              markers={this.state.markers}/>
+            <PathView 
+              paths={this.state.paths}
+              showSelected={this.showSelectedPath}
+            />
+          </div>
           <button onClick={this.clearPath}>Clear Path</button>
           <button id='savePath' onClick={this.savePath}>Save Path</button>
           <button id='showHeatmap' onClick={this.showHeatMap}>Show Heat Map</button>
-          <PathView 
-            paths={this.state.paths}
-            showSelected={this.showSelectedPath}
-          />
           <button onClick={this.export}>Export as JSON file</button>
         </div>
       )
     }
     return (
       <div id='heatMapContainer'>
-        <HeatMap markers={this.state.markers} />
-        <button onClick={this.backToEditView}>BackToEditing</button>
-        <PathView 
+        <div className='pathAndMap'>
+          <HeatMap markers={this.state.markers} />
+          <PathView 
             paths={this.state.paths}
             showSelected={this.showSelectedPath}
-          />
+            />
+        </div>
+        <button onClick={this.backToEditView}>BackToEditing</button>
         <button onClick={this.export}>Export as JSON file</button>
       </div>
     )

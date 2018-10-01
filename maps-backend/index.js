@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 app.use(express.static('build'))
 app.use(bodyParser.json())
 
-// "database" to save jsons received from client side
+// "database" to save jsons received from the client side
 let paths = []
 
 

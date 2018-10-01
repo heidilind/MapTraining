@@ -3,7 +3,7 @@ import Path from './Path.js'
 
 const PathView = ({ showSelected, paths }) => {
   return (
-    <div id='pathsContainer'>
+    <div id='pathsContainer' >
       <h1>Saved paths</h1>
       <ul>
         {paths.map( p =>

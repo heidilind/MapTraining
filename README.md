@@ -1,14 +1,14 @@
 # MapTraining
 
 ## Requirements
-Requires npm v10.7.0 and npx 6.4.0 
+Requires npm v10.7.0 
 
 ## Install
 ```
 $ git clone https://github.com/heidilind/MapsTraining.git
 $ cd MapTraining/maps
 ```
-Insert your Google API key in the maps/index.html <script> element
+Insert your Google API key manuallly in the maps/index.html <script> element
 ```
 $ npm install
 $ ./deploy.sh

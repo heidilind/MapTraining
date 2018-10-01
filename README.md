@@ -8,7 +8,7 @@ Requires npm v10.7.0 and npx 6.4.0
 $ git clone https://github.com/heidilind/MapsTraining.git
 $ cd MapTraining/maps
 
-Insert your Google API key in the maps/index.html <src> element
+Insert your Google API key in the maps/index.html <script> element
 
 $ npm install
 $ ./deploy.sh
@@ -22,6 +22,8 @@ $ npm install
 In the MapsTraining/maps-backend run
 $ npm start
 
+To run the tests run in the MapsTraining/maps 
+$ CI=true npm test
 ```
 ## Usage
 

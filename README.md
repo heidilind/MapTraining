@@ -8,7 +8,7 @@ Requires npm v10.7.0
 $ git clone https://github.com/heidilind/MapTraining.git
 $ cd MapTraining/maps
 ```
-Insert your Google API key manuallly in the maps/index.html <script> element
+Insert your Google API key manuallly in the maps/public/index.html <script> element
 ```
 $ npm install
 $ ./deploy.sh
